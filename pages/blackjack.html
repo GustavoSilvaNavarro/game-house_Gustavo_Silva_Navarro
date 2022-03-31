@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no, maximum-scale=1, minimum-scale=1">
+    <meta name="description" content="">
+    <meta name="keywords" content="">
+    <!--BOOTSWATCH-->
+    <link rel="stylesheet" href="https://bootswatch.com/5/sandstone/bootstrap.min.css">
+    <!--CSS-->
+    <link rel="stylesheet" href="../public/css/styles.css">
+    <!--ADDING JS-->
+    <script src="../public/js/index.js" defer></script>
+
+    <title>Silther House - Blackjack</title>
+</head>
+<body>
+    <main class="blackjackGame">
+        <section class="container">
+            <h1 class="text-center">Welcome to Blackjack</h1>
+            <h3 class="text-center">Hello Gustavo - <span id="blackjackGameResults">Let's Play</span></h3>
+
+            <div class="blackjackGame__participants">
+                <div class="blackjackGame__participantsYou border-end">
+                    <div id="blackjackGame__yourBox">
+                        <h4 class="text-white fs-2 text-center">You: <span id="blackjackGame__yourResult">0</span></h4>
+                    </div>
+                </div>
+                <div class="blackjackGame__participantsHouse border-start">
+                    <div id="blackjackGame__houseBox">
+                        <h4 class="text-white fs-2 text-center">House: <span id="blackjackGame__houseResult">0</span></h4>
+                    </div>
+                </div>
+            </div>
+
+            <div class="blackjackGame__buttons mt-4">
+                <button type="button" class="btn btn-info btn-lg me-2" id="blackjackGame__hitButton">Hit</button>
+                <button type="button" class="btn btn-warning btn-lg me-2" id="blackjackGame__standButton">Stand</button>
+                <button type="button" class="btn btn-dark btn-lg" id="blackjackGame__dealButton">Deal</button>
+            </div>
+
+            <div class="blackjackGame__results mt-4">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Wins</th>
+                            <th>Losses</th>
+                            <th>Draws</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td id="blackjackGame__wins">0</td>
+                            <td id="blackjackGame__losses">0</td>
+                            <td id="blackjackGame__draws">0</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </section>
+    </main>
+
+</body>
+</html>
