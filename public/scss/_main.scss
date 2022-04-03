@@ -131,27 +131,11 @@ nav.sps--abv .navbar__Logo {
     }
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+.section__bannerVideo {
+    background-image: url('https://res.cloudinary.com/dukuzakaw/image/upload/v1647463628/kaneBootstrap/mobilepics/video-bg_e2sqk0.webp');
+    padding: 100px 0;
+    position: relative;
+}
 
 //BLACKJACK PAGE
 .blackjackGame {
@@ -201,7 +185,6 @@ nav.sps--abv .navbar__Logo {
         border: 1px solid #000;
     }
 }
-
 
 //MEMORY GAME
 .gridContainerGame {

@@ -131,6 +131,12 @@ nav.sps--abv .navbar__Logo {
   font-weight: 700;
 }
 
+.section__bannerVideo {
+  background-image: url("https://res.cloudinary.com/dukuzakaw/image/upload/v1647463628/kaneBootstrap/mobilepics/video-bg_e2sqk0.webp");
+  padding: 100px 0;
+  position: relative;
+}
+
 .blackjackGame {
   background: url("https://res.cloudinary.com/dukuzakaw/image/upload/v1647885805/javaScript-project/blackJack/BlackJack-table_lljasu.webp") no-repeat center center;
   background-size: cover;
