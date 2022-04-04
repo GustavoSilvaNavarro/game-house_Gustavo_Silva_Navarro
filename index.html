@@ -209,17 +209,54 @@
             </div>
         </section>
 
-        <section class="section__bannerVideo">
+        <section class="section__bannerVideo mb-3">
             <div class="container">
                 <div class="row">
                     <div class="col-lg-8 col-sm-12">
                         <p class="display-2 text-light mb-5">¿Tienes un proyecto o idea para juegos en linea?</p>
-                        <button class="btn btn-success btn-lg mt-5">Compartenos tu idea</button>        
+                        <button class="btn btn-success btn-lg mt-5" data-bs-toggle="modal" data-bs-target="#staticBackdrop">Compartenos tu idea</button>        
                     </div>
                 </div>
             </div>
         </section>
     </main>
-    
+
+    <section class="container" id="userProjects">
+        <div id="projects-list" class="row"></div>
+    </section>
+  
+  <!-- Modal -->
+  <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="staticBackdropLabel">Tell us your idea!!</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+            <form id="projectUser">
+                <div class="mb-3">
+                    <label for="nameIdea" class="form-label mt-1">Online Project</label>
+                    <input id="nameIdea" type="text" class="form-control" name="gameIdea" placeholder="Name your online game...">
+                </div>
+
+                <div class="mb-3">
+                    <label for="descriptionIdea" class="form-label mt-1">Describe your idea</label>
+                    <textarea id="descriptionIdea" name="describeIdea" class="form-control" rows="3" placeholder="Give a brief description..."></textarea>
+                </div>
+
+                <div class="mb-3">
+                    <label for="emailContact" class="form-label mt-1">Email of contact</label>
+                    <input id="emailContact" type="email" class="form-control" name="emailIdea" placeholder="Your email...">
+                </div>
+
+                <div class="d-grid">
+                    <input type="submit" class="btn btn-primary btn-block" data-bs-dismiss="modal" value="Save">
+                </div>
+            </form>
+        </div>
+      </div>
+    </div>
+  </div>
 </body>
 </html>
